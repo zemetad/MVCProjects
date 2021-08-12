@@ -33,10 +33,7 @@
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.EntityFrameworkCore.Design": "2.1.1",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
-          "EntityFramework.Reference": "6.0.0.0",
-          "EntityFramework.SqlServer": "6.0.0.0",
-          "Microsoft.Data.Entity.Build.Tasks": "6.4.4.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10"
         },
         "runtime": {
           "LGX.dll": {}
@@ -351,39 +348,6 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
-        }
-      },
-      "EntityFramework.Reference/6.0.0.0": {
-        "runtime": {
-          "EntityFramework.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.400.420.21404"
-          }
-        },
-        "compile": {
-          "EntityFramework.dll": {}
-        }
-      },
-      "EntityFramework.SqlServer/6.0.0.0": {
-        "runtime": {
-          "EntityFramework.SqlServer.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.400.420.21404"
-          }
-        },
-        "compile": {
-          "EntityFramework.SqlServer.dll": {}
-        }
-      },
-      "Microsoft.Data.Entity.Build.Tasks/6.4.4.0": {
-        "runtime": {
-          "Microsoft.Data.Entity.Build.Tasks.dll": {
-            "assemblyVersion": "6.4.4.0",
-            "fileVersion": "6.400.420.21404"
-          }
-        },
-        "compile": {
-          "Microsoft.Data.Entity.Build.Tasks.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3655,21 +3619,6 @@
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
     },
-    "EntityFramework.Reference/6.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "EntityFramework.SqlServer/6.0.0.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Microsoft.Data.Entity.Build.Tasks/6.4.4.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
       "serviceable": true,
@@ -4933,7 +4882,7 @@
     "runtime.osx.10.10-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/p8IQT2brFMDa7BHMH71LV+w5Tb3OxoLHxhn6+MGqN5xeqhM2HRHmj+7xQGJnaRn73d7ZTvp6yRCFMvolws4wA==",
+      "sha512": "sha512-X7IdhILzr4ROXd8mI1BUCQMSHSQwelUlBjF1JyTKCjXaOGn2fB4EKBxQbCK2VjO3WaWIdlXZL3W6TiIVnrhX4g==",
       "path": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.osx.10.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
@@ -4947,7 +4896,7 @@
     "runtime.ubuntu.14.04-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JGc0pAWRE8lB4Ucygk2pYSKbUPLlAIq6Bczf5/WF2D/VKJEPtYlVUMxk8fbl1zRfTWzSHi+VcFZlaPlWiNxeKg==",
+      "sha512": "sha512-ytoewC6wGorL7KoCAvRfsgoJPJbNq+64k2SqW6JcOAebWsFUvCCYgfzQMrnpvPiEl4OrblUlhF2ji+Q1+SVLrQ==",
       "path": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0",
       "hashPath": "runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512"
     },
@@ -5031,7 +4980,7 @@
     "System.Collections.Specialized/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
+      "sha512": "sha512-Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "path": "system.collections.specialized/4.3.0",
       "hashPath": "system.collections.specialized.4.3.0.nupkg.sha512"
     },

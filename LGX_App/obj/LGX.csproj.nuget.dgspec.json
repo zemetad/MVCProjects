@@ -1,28 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CashAmerica\\source\\repos\\MvcMovie\\LGX.csproj": {}
+    "C:\\Users\\zemet\\Documents\\GitHub\\MVCProjects\\LGX_App\\LGX.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CashAmerica\\source\\repos\\MvcMovie\\LGX.csproj": {
+    "C:\\Users\\zemet\\Documents\\GitHub\\MVCProjects\\LGX_App\\LGX.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CashAmerica\\source\\repos\\MvcMovie\\LGX.csproj",
+        "projectUniqueName": "C:\\Users\\zemet\\Documents\\GitHub\\MVCProjects\\LGX_App\\LGX.csproj",
         "projectName": "LGX",
-        "projectPath": "C:\\Users\\CashAmerica\\source\\repos\\MvcMovie\\LGX.csproj",
-        "packagesPath": "C:\\Users\\CashAmerica\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CashAmerica\\source\\repos\\MvcMovie\\obj\\",
+        "projectPath": "C:\\Users\\zemet\\Documents\\GitHub\\MVCProjects\\LGX_App\\LGX.csproj",
+        "packagesPath": "C:\\Users\\zemet\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\zemet\\Documents\\GitHub\\MVCProjects\\LGX_App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\CashAmerica\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\zemet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"

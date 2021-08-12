@@ -26,18 +26,15 @@
                     data.setValue(i, 1, Total);
                 }
  
-
-            var chart = new google.visualization.BarChart(document.getElementById('myBarChart'));
-            chart.draw(data, null);
             var pie_chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
             pie_chart.draw(data, null);
         }
  
     </script>
 
-    <div id="myBarChart" style="align-content:center; width: 1300px; height: 500px;"></div>
+    
     <div id="myPieChart" style="align-content:center; width: 1300px; height: 500px;"></div>
-<h2>List of Movies</h2>
+<h2> Relay Racks </h2>
 
 <p>
     <a asp-action="Create">Create New</a>

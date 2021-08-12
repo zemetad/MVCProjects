@@ -12,29 +12,34 @@
  
 </head>
 <body onload='loadMapScenario();'>
-    <header>
-        <nav class="navbar navbar-default">
-            <ul class="nav navbar-nav">
-                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                <li><a asp-controller="RelayRack" asp-action="Index">Relay Rack</a></li>
-                <li><a asp-controller="Shelf" asp-action="Index">Shelf</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+	<header>
+		<nav class="container navbar navbar-default bg-dark" >
+			<ul class="nav navbar-nav">
+				<li><a asp-controller="Home" asp-action="Index">Home</a></li>
+				<li><a asp-controller="RelayRack" asp-action="Index">Relay Rack</a></li>
+				<li><a asp-controller="Shelf" asp-action="Index">Shelf</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Movie App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+	<div class="container">
+		<img style="align-content:center; width:100%;" src="~/images/ASG.PNG" alt="ASP.NET" class="img-responsive" />
+	</div>
+
+	<div class="container">
+		<main role="main" class="pb-3">
+			@RenderBody()
+		</main>
+	</div>
+
+	<footer class="border-top footer text-muted">
+		<div class="container">
+			&copy; Zemenu Bejiga, 2021 - LGX App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+		</div>
+	</footer>
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

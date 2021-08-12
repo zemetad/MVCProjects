@@ -1,27 +1,26 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LGX.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Movie",
+                name: "RelayRack",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Title = table.Column<string>(nullable: true),
-                    Isle = table.Column<DateTime>(nullable: false),
-                    Genre = table.Column<string>(nullable: true),
-                    Comment = table.Column<decimal>(nullable: false)
+                    Name = table.Column<string>(nullable: true),
+                    Isle = table.Column<string>(nullable: true),
+                    RackNumber = table.Column<string>(nullable: true),
+                    Comment = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Movie", x => x.Id);
+                    table.PrimaryKey("PK_RelayRack", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -37,9 +36,9 @@ namespace LGX.Migrations
                 {
                     table.PrimaryKey("PK_Shelf", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Shelf_Movie_RelayRackId",
+                        name: "FK_Shelf_RelayRack_RelayRackId",
                         column: x => x.RelayRackId,
-                        principalTable: "Movie",
+                        principalTable: "RelayRack",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -56,7 +55,7 @@ namespace LGX.Migrations
                 name: "Shelf");
 
             migrationBuilder.DropTable(
-                name: "Movie");
+                name: "RelayRack");
         }
     }
 }
