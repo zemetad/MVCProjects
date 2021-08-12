@@ -1,0 +1,87 @@
+﻿@model IEnumerable<LGX.Models.RelayRack>
+
+@{
+    ViewData["Title"] = "Index";
+}
+    <script>
+        google.charts.load('current', { packages: ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Movie');
+            data.addColumn('number', 'Comment');
+
+            var NumOfRows = $('table tbody tr').length;
+            data.addRows(NumOfRows);
+
+               for ( i = 0; i < NumOfRows; ++i) {
+
+                    var CurrentPlusOne = i+1;
+                    var Month = $('table tbody tr:nth-child(' + CurrentPlusOne + ')').children(':first-child').html();
+                    var Total = parseInt($('table tbody tr:nth-child(' + CurrentPlusOne + ')').children().eq(3).html());
+
+                    data.setValue(i, 0, Month);
+                    data.setValue(i, 1, Total);
+                }
+ 
+
+            var chart = new google.visualization.BarChart(document.getElementById('myBarChart'));
+            chart.draw(data, null);
+            var pie_chart = new google.visualization.PieChart(document.getElementById('myPieChart'));
+            pie_chart.draw(data, null);
+        }
+ 
+    </script>
+
+    <div id="myBarChart" style="align-content:center; width: 1300px; height: 500px;"></div>
+    <div id="myPieChart" style="align-content:center; width: 1300px; height: 500px;"></div>
+<h2>List of Movies</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table table-striped table-dark">
+    <thead  class="navbar-inverse" style="color:white;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Isle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RackNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Comment)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Isle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RackNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Comment)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
