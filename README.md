@@ -1,6 +1,8 @@
-# MVCProjects#To run no further action is needed.
+# MVCProjects#
 
-it has connected to LocalDB but if you want to connect it to <SQL Server> go to <appsetting.json> file to change the server and database name as shown below.
+To run no further action is needed.
+
+It has connected to LocalDB but if you want to connect it to <SQL Server> go to <appsetting.json> file to change the server and database name as shown below.
 
 "LGXContext": "Server=<yourservername>;Database=<yourdatabase>;Trusted_Connection=True;MultipleActiveResultSets=true"
 
@@ -40,5 +42,5 @@ ALTER TABLE [dbo].[Shelf] WITH CHECK ADD CONSTRAINT [FK_Sale_Movie_MovieId] FORE
 
 ALTER TABLE [dbo].[Shelf] CHECK CONSTRAINT [FK_Sale_Movie_MovieId] GO
 
-Authors
+Author.
 Zemenu Bejiga ZBejiga@asginc.us
