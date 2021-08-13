@@ -10,8 +10,8 @@
         function drawChart() {
 
             var data = new google.visualization.DataTable();
-            data.addColumn('string', 'Movie');
-            data.addColumn('number', 'Comment');
+            data.addColumn('string', 'Name');
+            data.addColumn('number', 'Isle');
 
             var NumOfRows = $('table tbody tr').length;
             data.addRows(NumOfRows);
@@ -20,7 +20,7 @@
 
                     var CurrentPlusOne = i+1;
                     var Month = $('table tbody tr:nth-child(' + CurrentPlusOne + ')').children(':first-child').html();
-                    var Total = parseInt($('table tbody tr:nth-child(' + CurrentPlusOne + ')').children().eq(3).html());
+                    var Total = parseInt($('table tbody tr:nth-child(' + CurrentPlusOne + ')').children().eq(1).html());
 
                     data.setValue(i, 0, Month);
                     data.setValue(i, 1, Total);

@@ -91,7 +91,7 @@ using LGX.Models;
             WriteLiteral("(data, null);\r\n        }\r\n \r\n    </script>\r\n\r\n    \r\n    <div id=\"myPieChart\" style=\"align-content:center; width: 1300px; height: 500px;\"></div>\r\n<h2> Relay Racks </h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(1289, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "490d06946c4a44848d36b26477335f11", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "025c9087331544219e016f23dc9a0dd1", async() => {
                 BeginContext(1312, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -202,7 +202,7 @@ using LGX.Models;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(2458, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1fe18d8d8b2482cb7a2ee01dcee9e09", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26c5e2e937f14781958f897251e3320b", async() => {
                 BeginContext(2503, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -237,7 +237,7 @@ using LGX.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(2535, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7fc8d5378d334e9c87e6b77ddfc2bbf5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b1c82f27c0cc4f57a6563b0d339f4bd1", async() => {
                 BeginContext(2583, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -272,7 +272,7 @@ using LGX.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(2618, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "04d3615b73484e50bf903485cbc20816", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b30c3c11a5f4c5ba818fcc8bd44c532", async() => {
                 BeginContext(2665, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
